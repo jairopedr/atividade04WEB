@@ -56,35 +56,39 @@
         <div class="bg-white p-2 text-black bg-opacity-25">
             <div class="row row-cols-1 row-cols-md-1 g-4 clo-11 m-auto">
                 <div class="col">
-                    <div class="card h-100 bg-primary bg-opacity-75">
+                    <div class="card h-100 bg-primary bg-opacity-50">
                         <div class="card-body " style="font-family: Arial, Helvetica, sans-serif">
                             <h5 class="card-title"> Quem somos?</h5>
                             <p class="card-text"> O WorldCars, para o português, Mundo dos Carros é um site para os amantes de carros antigos/clássicos e carros esportivos. 
                                 Nosso objetivo é passar dicas, apresentar notícias e curiosidades sobre esse mundo, além de divulgar fotos dos mais variados modelos de carros e até mesmo daqueles que nos acompanham aqui ou nas nossas redes socias. 
-                                E a você que ainda não faz parte, junte-se a nós, apaixonados por 4 rodas!! 
+                                E a você que ainda não faz parte, junte-se a nós e torne-se um apaixonado por 4 rodas. 
                                 <br><p><b> Sobre a divulgação das fotos, se tiver interesse, preencha o formulário abaixo e nos envie a foto para divulgação.</b>
                             </p></p>
-                            <div class="row">
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputNome" class="form-label">Nome</label>
+                                    <input type="nome" class="form-control" id="inputNome">
                                 </div>
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+                                <div class="col-md-6">
+                                    <label for="inputSobrenome" class="form-label">Sobrenome</label>
+                                    <input type="nome" class="form-control" id="inputSobrenome">
                                 </div>
-                            </div><br>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Descrição do modelo</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Selecioar foto</label>
-                                <input class="form-control" type="file" id="formFile">
-                                
-                            </div>                         
+                                <div class="col-12">
+                                    <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Descrição do modelo</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="formFile" class="form-label">Selecioar foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </form>                       
                         </div>
                     </div>
                 </div>
@@ -116,8 +120,5 @@
                  &copy 2022 Copyright: Jairo Pedro</a>
             </div>
         </footer>
-        
-    
-    
     </body>
 </html>
